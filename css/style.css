@@ -46,6 +46,10 @@ body {
 .nav-item-link:hover {
   color: green;
 }
+.nav-name {
+  color: black;
+}
+
 @media (max-width: 873px) {
   .nav-contain {
     display: block;
@@ -54,11 +58,25 @@ body {
   .nav-ul-items {
     padding: 0;
   }
+  .nav-item-link {
+    text-decoration: none;
+    color: white;
+  }
+  .nav-name {
+    color: aliceblue;
+  }
 }
 
 @media (max-width: 992px) {
   .navbar {
     background-color: rgba(34, 34, 34, 1);
+  }
+  .nav-item-link {
+    text-decoration: none;
+    color: white;
+  }
+  .nav-name {
+    color: aliceblue;
   }
 }
 /* nav button */
@@ -204,6 +222,40 @@ table {
 }
 .info-contain:hover {
   text-decoration: underline;
+}
+/* comment */
+form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.input-field {
+  background-color: transparent;
+  border: 2px solid #555;
+  border-radius: 2px;
+  width: 90%;
+  padding: 0.625rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.input-field:focus {
+  outline: none;
+}
+
+.contact-button {
+  background-color: transparent;
+  border: 2px solid green;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+.contact-button:hover {
+  background-color: green;
+  cursor: pointer;
 }
 /* footer */
 .footer-container {
